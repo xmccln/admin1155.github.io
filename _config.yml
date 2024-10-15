@@ -5,11 +5,11 @@
 # Site
 title: xmccln
 subtitle: 'this xmccln hexo page'
-description: ''
-keywords:
+description: '1'
+keywords: blog
 author: xmccln
-language: zh-cn
-timezone: ''
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
