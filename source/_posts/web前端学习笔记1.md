@@ -1,7 +1,7 @@
 ﻿---
 title: web学习1
 date: 2024-10-16 09:00:47
-tags: web,前端，学习
+tags: [web前端,笔记,学习]
 ---
 
 # head
