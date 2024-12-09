@@ -1,4 +1,4 @@
-name: test
+name: Pages
 
 on:
   push:
@@ -51,11 +51,11 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
           mkdir -p ~/.ssh/
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -t ed25519 ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
       - name: Deploy via SCP
-        run: scp -r public/* ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }}:/home/ubuntu/html
+        run: scp -r public/* ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }}:/www/html
 
 
 
