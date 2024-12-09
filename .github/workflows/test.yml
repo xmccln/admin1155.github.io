@@ -55,5 +55,5 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -t ed25519 ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
       - name: Deploy via SCP
-        run: scp -r public/* ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }}:/home/ubuntu/html/
+        run: scp -p 22001 -r public/* ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }}:/home/ubuntu/html/
 
