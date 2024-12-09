@@ -56,4 +56,3 @@ jobs:
           ssh-keyscan -t ed25519 ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
       - name: Deploy via SCP
         run: scp -p 22001 -o PreferredAuthentications=publickey  -i ~/.ssh/id_ed25519  -r public/* ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }}:/home/ubuntu/html/
-
