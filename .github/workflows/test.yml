@@ -57,5 +57,3 @@ jobs:
       - name: Deploy via SCP
         run: scp -r public/* ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }}:/www/html
 
-
-
