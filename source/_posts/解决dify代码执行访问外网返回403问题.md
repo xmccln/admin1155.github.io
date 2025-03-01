@@ -7,7 +7,8 @@ tags:
 
 
 ## 解决dify代码执行访问外网返回403问题
-![Dify架构示意图](https://gitee.com/adcsj/pico/raw/master/屏幕截图%202025-03-01%20152342.png)
+![](https://pan.nmccl.cn.eu.org:5245/d/ali/pico/屏幕截图 2025-03-01 152342.png)
+
 
 ### 问题背景
 在本地开发环境中能够正常运行的代码执行器，当部署到Dify平台时突然出现外网83端口访问失败的情况。通过Dify的架构日志追踪，我们发现核心问题出在平台的安全防护机制上。
@@ -17,7 +18,7 @@ tags:
 docker logs -f docker-ssrf_proxy-1
 ```
 
-![SSRF代理拦截日志](https://gitee.com/adcsj/pico/raw/master/屏幕截图%202025-03-01%20152557.png)
+![](https://pan.nmccl.cn.eu.org:5245/d/ali/pico/屏幕截图 2025-03-01 152557.png)
 
 ### 技术原理分析
 根据Dify官方文档，代码执行器(Sandbox)的网络流量默认会经过SSRF代理（Server-Side Request Forgery Proxy）。该代理基于Squid实现，通过预定义的安全规则防止潜在的SSRF攻击：
@@ -40,7 +41,7 @@ acl Safe_ports port 80      # http
 acl Safe_ports port 443     # https
 ```
 
-![Squid配置文件截图](https://gitee.com/adcsj/pico/raw/master/屏幕截图%202025-03-01%20153245.png)
+![](https://pan.nmccl.cn.eu.org:5245/d/ali/pico/屏幕截图 2025-03-01 153245.png)
 
 新增83端口白名单规则：
 
