@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "使用vLLM在本地高效部署和运行DeepSeek-R1-32B大语言模型.md",
+                "file": "使用华为开发者空间云主机编译属于自己的Linux内核.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "使用vLLM在本地高效部署和运行DeepSeek-R1-32B大语言模型"
+              "title": "使用华为开发者空间云主机编译属于自己的Linux内核"
+            }
+          },
+          {
+            "id": "d28be50d40a44887",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "解决dify代码执行访问外网返回403问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "解决dify代码执行访问外网返回403问题"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "使用vLLM在本地高效部署和运行DeepSeek-R1-32B大语言模型.md",
+                "file": "解决dify代码执行访问外网返回403问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "使用vLLM在本地高效部署和运行DeepSeek-R1-32B大语言模型 的反向链接列表"
+              "title": "解决dify代码执行访问外网返回403问题 的反向链接列表"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "使用vLLM在本地高效部署和运行DeepSeek-R1-32B大语言模型.md",
+                "file": "解决dify代码执行访问外网返回403问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "使用vLLM在本地高效部署和运行DeepSeek-R1-32B大语言模型 的出链列表"
+              "title": "解决dify代码执行访问外网返回403问题 的出链列表"
             }
           },
           {
@@ -155,8 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,11 +182,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5d9b56ab1185aa65",
+  "active": "d28be50d40a44887",
   "lastOpenFiles": [
-    "c指针.md",
+    "求出一个数组中最大的值.md",
+    "解决dify代码执行访问外网返回403问题.md",
+    "404.md",
+    "使用vLLM在本地高效部署和运行DeepSeek-R1-32B大语言模型.md",
+    "test-page-2.md",
     "web前端学习笔记1.md",
-    "未命名.md",
-    "求出一个数组中最大的值.md"
+    "cpp笔记.md",
+    "c指针.md",
+    "未命名.md"
   ]
 }
